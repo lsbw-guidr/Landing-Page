@@ -1,0 +1,54 @@
+/* line 2, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 10, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+html, body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 15, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Russo One', sans-serif;
+}
+
+/* line 19, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+h1 {
+  font-size: 4rem;
+}
+
+/* line 22, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+h2 {
+  font-size: 3.2rem;
+}
+
+/* line 26, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+h3 {
+  font-size: 2.8rem;
+}
+
+/* line 30, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* line 35, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_reset.scss */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1, C:/Users/Dstar/projects/lambda/guidr/Landing-Page/assets/SaSS/_home-page.scss */
+html {
+  background-color: red;
+}
+
+/*# sourceMappingURL=../CSS/index.map */

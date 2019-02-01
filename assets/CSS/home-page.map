@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../SaSS/home-page.css",
+	"sources": [
+		"../SaSS/home-page.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"mappings": "",
+	"names": []
+}

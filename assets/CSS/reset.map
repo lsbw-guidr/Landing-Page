@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../SaSS/reset.css",
+	"sources": [
+		"../SaSS/reset.scss"
+	],
+	"sourcesContent": [
+		"// General Styles\r\n* {\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  html {\r\n    font-size: 62.5%;\r\n  }\r\n  \r\n  html, body {\r\n    font-family: 'Ubuntu', sans-serif;\r\n    // color: @main-font-color;\r\n  }\r\n  \r\n  h1, h2, h3, h4, h5 {\r\n    font-family: 'Russo One', sans-serif;\r\n    // color: @header-font-color;\r\n  }\r\n  h1 {\r\n    font-size: 4rem;\r\n  }\r\n  h2 {\r\n    font-size: 3.2rem;\r\n  }\r\n  \r\n  h3 {\r\n    font-size: 2.8rem;\r\n  }\r\n  \r\n  p {\r\n    font-size: 1.6rem;\r\n    line-height: 1.4;\r\n  }\r\n  \r\n  .container {\r\n    max-width: 1000px;\r\n    width: 100%;\r\n    margin: 0 auto;  \r\n  }\r\n  \r\n  "
+	],
+	"mappings": ";AACA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAW;CACxB;;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAM;CAClB;;;AAED,AAAA,IAAI,EAAE,AAAA,IAAI,CAAC;EACT,WAAW,EAAE,oBAAqB;CAEnC;;;AAED,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,CAAC;EACjB,WAAW,EAAE,uBAAwB;CAEtC;;;AACD,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,IAAK;CACjB;;;AACD,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAO;CACnB;;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAO;CACnB;;;AAED,AAAA,CAAC,CAAC;EACA,SAAS,EAAE,MAAO;EAClB,WAAW,EAAE,GAAI;CAClB;;;AAED,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAO;EAClB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,MAAO;CAChB",
+	"names": []
+}

@@ -1,0 +1,51 @@
+.list {
+    // margin: 200px;
+    @include wire-border;
+    .topics {
+    display: flex;
+    flex-direction: row;
+        .title {
+            margin: 2% 0;
+            padding: 2% 0;
+            // @include wire-border;
+        }
+        .tab {
+            cursor: pointer;
+            @include wire-border;
+            margin: 2%;
+            padding: 2%;
+        }
+    }
+    .cards-container {
+        @include flex(space-evenly);
+        @include width-100;
+        flex-wrap: wrap;
+        
+        .card {
+            @include wire-border;
+            @include flex(space-between, none, column);
+            width: 380px;
+        }
+        // .headline {
+        // }
+        .author {
+            @include flex(none, center);
+        
+        span {
+            padding-left: 10px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            }
+        }
+        .img-container {
+            height: 40px;
+            @include wire-border;
+        }    
+            img {
+                width: 40px;
+            }
+        
+    
+    }
+}

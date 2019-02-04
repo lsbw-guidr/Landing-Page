@@ -180,7 +180,7 @@ footer .copyright img {
 .home .banner {
   display: flex;
   z-index: 1;
-  background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
+  background-image: url("images/colormatch/pexels-photo-206359.jpeg");
   height: 850px;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,35 +1,48 @@
 header {
   position: fixed;
   width: 100%;
-  @include flex(space-around, center, none);
-  background-color: $violet;
   color: white;
-  padding: 10px 0;
-  opacity: .7;
-  // @include wire-border;
-  opacity: .8;
-  // border-top: solid 5px $blue;
+  
+  .top-line-nav {
+    @include flex(space-between, none, row);
+    background-color: $blue;
+    opacity: .8;
+    padding: 0 10rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+  
+    a {
+      text-decoration-color: black;
+      margin: 0 2rem;
+   }
+  }
+  .second-line-nav {
+    @include flex(space-between, none, row);
+    background-color: $blue;
+    padding: 3rem 4rem;
+    opacity: .5;
+  }
   .logo {
-    // @include wire-border;
     padding: 10px 2rem;
     font-family: 'Noteworthy' , cursive;
     font-size: 5rem;
     display: flex;
-    align-items: flex-end;
     .logo-img {
       width: auto;
-      height: 6rem;
+      height: 5rem;
     }
   }
   nav {
+    padding-right: 18 rem;
     a {
       margin: 2rem 0;
       padding: 10px 3rem;
       text-decoration: none;
       color: white;
       // @include wire-border;
-      border-left: 1px solid $black;
-      // border-right: 1px solid $black;
 
       &:hover {
         text-decoration: underline;

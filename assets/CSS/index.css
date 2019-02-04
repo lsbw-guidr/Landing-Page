@@ -88,36 +88,61 @@ body {
   line-height: 5rem;
 }
 
+li {
+  list-style-type: square;
+  padding: 3rem 0;
+}
+
 header {
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: none;
-  background-color: #BD10E0;
   color: white;
-  padding: 10px 0;
-  opacity: 0.7;
+}
+header .top-line-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+  background-color: #661FFF;
   opacity: 0.8;
+  padding: 0 10rem;
+}
+header .icons {
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+}
+header .icons a {
+  text-decoration-color: black;
+  margin: 0 2rem;
+}
+header .second-line-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+  background-color: #661FFF;
+  padding: 3rem 4rem;
+  opacity: 0.5;
 }
 header .logo {
   padding: 10px 2rem;
   font-family: "Noteworthy", cursive;
   font-size: 5rem;
   display: flex;
-  align-items: flex-end;
 }
 header .logo .logo-img {
   width: auto;
-  height: 6rem;
+  height: 5rem;
+}
+header nav {
+  padding-right: 18 rem;
 }
 header nav a {
   margin: 2rem 0;
   padding: 10px 3rem;
   text-decoration: none;
   color: white;
-  border-left: 1px solid #000000;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -126,10 +151,25 @@ header nav .last-nav-item {
   border-right: solid 1px #000000;
 }
 
+footer {
+  border-top: 1px solid black;
+  padding-top: 30px;
+}
+footer .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+footer .copyright img {
+  height: 5rem;
+  width: auto;
+}
+
 .home .banner {
   background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
   /* Full height */
-  height: 863px;
+  height: 1000px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -177,19 +217,6 @@ header nav .last-nav-item {
 .home .list .card {
   background-color: #4A4A4A;
   margin: 10px 1rem;
-}
-.home footer {
-  border-top: 1px solid black;
-}
-.home footer .copyright {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
-}
-.home footer .copyright img {
-  height: 5rem;
-  width: auto;
 }
 
 .list {

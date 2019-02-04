@@ -3,7 +3,7 @@
   .banner {
     background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
     /* Full height */
-    height: 863px;
+    height: 1000px;
     // width: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -58,17 +58,5 @@
       margin: 10px 1rem;
     }
   }
-  footer {
-    border-top: 1px solid black;
-    .copyright {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: baseline;
-    img {
-      height: 5rem;
-      width: auto;
-    }
-    }
-  }
+
 }

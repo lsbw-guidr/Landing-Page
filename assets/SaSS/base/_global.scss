@@ -1,7 +1,18 @@
+.container {
+    width: 1000px;
+    margin: auto;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
 html {
     font-size: 62.5%;
+    font-family: $font-stack;
+    color: $black;
 }
 body {
-    font-size: 2em;
+    font-size: 2rem;
 }
 

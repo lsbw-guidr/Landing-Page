@@ -67,16 +67,97 @@ input, select, textarea {
   appearance: none;
 }
 
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
+  font-family: Rubik, sans-serif;
+  color: #000000;
 }
 
 body {
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: none;
+  background-color: #4A4A4A;
+  color: white;
+  padding: 16px 0;
+  opacity: 0.8;
+}
+header .logo {
+  padding: 2px 2rem;
+  font-family: "Handlee", cursive;
+  font-size: 5rem;
+}
+header nav a {
+  margin: 2rem;
+  padding: 2px 2rem;
+  text-decoration: none;
+  color: #F5A623;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #F5A623;
+}
+
+.home .banner {
+  background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
+  /* Full height */
+  height: 863px;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 10rem;
+}
+.home .banner .banner-text {
+  opacity: 0.7;
+}
+.home .banner .banner-text span {
+  font-size: 13rem;
+}
+.home .banner .banner-text .highlight {
+  text-decoration: underline overline;
+  font-size: 9rem;
+  opacity: 0.9;
+}
+.home .list {
+  padding-top: 20px;
+  background-color: #BD10E0;
+  height: 800px;
+  color: #000000;
+}
+.home .list .card {
+  background-color: #4A4A4A;
+  margin: 10px 1rem;
 }
 
 .list {
-  border: 1px solid black;
+  border: 1px solid red;
 }
 .list .topics {
   display: flex;
@@ -88,7 +169,7 @@ body {
 }
 .list .topics .tab {
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid red;
   margin: 2%;
   padding: 2%;
 }
@@ -101,7 +182,7 @@ body {
   flex-wrap: wrap;
 }
 .list .cards-container .card {
-  border: 1px solid black;
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: none;
@@ -122,7 +203,7 @@ body {
 }
 .list .cards-container .img-container {
   height: 40px;
-  border: 1px solid black;
+  border: 1px solid red;
 }
 .list .cards-container img {
   width: 40px;

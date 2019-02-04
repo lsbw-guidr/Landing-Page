@@ -1,0 +1,43 @@
+.home {
+
+  .banner {
+    background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
+    /* Full height */
+    height: 863px;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 10rem;
+    .banner-text {
+      opacity: .7;
+      span {
+        font-size: 13rem;
+      }
+      .highlight {
+        text-decoration: underline overline;
+        font-size: 9rem;
+        opacity: .9;
+      }
+    }
+  }
+
+  .list {
+    padding-top: 20px;
+    background-color: $violet;
+    height: 800px;
+    color: $black;
+    
+    .card {
+      background-color: $grey;
+      margin: 10px 1rem;
+    }
+  }
+}

@@ -1,3 +1,32 @@
-// nav a {
-//     font-size: 4em;
-// }
+header {
+  position: fixed;
+  width: 100%;
+  @include flex(space-around, center, none);
+  background-color: $grey;
+  color: white;
+  padding: 16px 0;
+  // @include wire-border;
+  opacity: .8;
+  // border-top: solid 5px $blue;
+  .logo {
+    // @include wire-border;
+    padding: 2px 2rem;
+    font-family: 'Handlee' , cursive;
+    font-size: 5rem;
+  }
+  nav {
+    a {
+      margin: 2rem;
+      padding: 2px 2rem;
+      text-decoration: none;
+      color: $orange;
+      // @include wire-border;
+
+      &:hover {
+        text-decoration: underline;
+        color: white;
+        background-color: $orange;
+      }
+    } 
+  }
+}

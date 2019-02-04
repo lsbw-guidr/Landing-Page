@@ -36,3 +36,15 @@ BREAKPOINTS
 @mixin logo-font() {
    font-family: 'Noteworthy';
 }
+@mixin custom-btn($color, $background) {
+   padding: 10px 4rem;
+   border: 1px solid black;
+   color: $color;
+   background-color: $background;
+   border-radius: 10px;
+   text-decoration: none;
+   &:hover {
+      color: $background;
+      background-color: $color;
+   }
+ }

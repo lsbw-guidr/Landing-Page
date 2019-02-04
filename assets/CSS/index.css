@@ -68,13 +68,19 @@ input, select, textarea {
 }
 
 .container {
-  width: 1200px;
+  width: 1000px;
   margin: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   height: 100%;
   margin: 0;
+  font-size: 1.6rem;
+  line-height: 5rem;
 }
 
 html {
@@ -83,9 +89,9 @@ html {
   color: #000000;
 }
 
-body {
+h2 {
   font-size: 2rem;
-  line-height: 5rem;
+  font-weight: 500;
 }
 
 li {
@@ -94,46 +100,38 @@ li {
 }
 
 header {
-  position: fixed;
   width: 100%;
   color: white;
 }
-header .top-line-nav {
+header .main-nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: none;
+  align-items: center;
   flex-direction: row;
   background-color: #661FFF;
-  opacity: 0.8;
-  padding: 0 10rem;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid-black;
 }
-header .icons {
-  display: flex;
-  justify-content: center;
-  padding: 0 3rem;
+header .main-nav .login {
+  padding: 10px 4rem;
+  border: 1px solid black;
+  color: #4A4A4A;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }
-header .icons a {
-  text-decoration-color: black;
-  margin: 0 2rem;
-}
-header .second-line-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: none;
-  flex-direction: row;
-  background-color: #661FFF;
-  padding: 3rem 4rem;
-  opacity: 0.5;
+header .main-nav .login:hover {
+  color: white;
+  background-color: #4A4A4A;
 }
 header .logo {
-  padding: 10px 2rem;
   font-family: "Noteworthy", cursive;
-  font-size: 5rem;
   display: flex;
 }
 header .logo .logo-img {
   width: auto;
-  height: 5rem;
+  height: 8rem;
 }
 header nav {
   padding-right: 18 rem;
@@ -147,13 +145,17 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
-header nav .last-nav-item {
-  border-right: solid 1px #000000;
-}
 
 footer {
   border-top: 1px solid black;
   padding-top: 30px;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+}
+footer .icons a {
+  margin: 0 1.3rem;
 }
 footer .copyright {
   display: flex;
@@ -167,24 +169,24 @@ footer .copyright img {
 }
 
 .home .banner {
+  display: flex;
+  z-index: 1;
   background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
   /* Full height */
-  height: 1000px;
+  height: 400px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 5rem;
   text-align: center;
   line-height: 10rem;
-  border-bottom: 5px solid #661FFF;
 }
 .home .banner .banner-text {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .home .banner .banner-text span {
   font-size: 13rem;
@@ -193,6 +195,46 @@ footer .copyright img {
   text-decoration: underline overline;
   font-size: 9rem;
   opacity: 0.9;
+}
+.home .main-page {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+}
+.home .main-page .image {
+  height: auto;
+  width: 40rem;
+}
+.home .main-page .left-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  align-items: center;
+  padding: 1rem;
+}
+.home .main-page .left-column .post {
+  line-height: 2.4rem;
+  margin: 0 2rem;
+}
+.home .main-page .left-column .post .title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .main-page .left-column .post .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5rem;
+}
+.home .main-page .right-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.home .main-page .right-column .image {
+  width: 50%;
 }
 .home .advertising {
   display: flex;
@@ -222,7 +264,7 @@ footer .copyright img {
 .list {
   border-top: 5px solid #F5A623;
   padding-top: 20px;
-  background-color: #BD10E0;
+  background-color: #661FFF;
   height: 100%;
   color: white;
 }

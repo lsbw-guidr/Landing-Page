@@ -23,7 +23,7 @@ BREAKPOINTS
    border: 1px solid red;
 }
 
-@mixin width-100 {
+@mixin width-100() {
    width: 100%;
 }
 @mixin flex($jc: none, $ai: none, $dir: row) {
@@ -32,3 +32,7 @@ BREAKPOINTS
    align-items: $ai;
    flex-direction: $dir;
  }
+
+@mixin logo-font() {
+   font-family: 'Noteworthy';
+}

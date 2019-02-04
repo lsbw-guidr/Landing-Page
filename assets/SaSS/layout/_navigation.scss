@@ -2,31 +2,44 @@ header {
   position: fixed;
   width: 100%;
   @include flex(space-around, center, none);
-  background-color: $grey;
+  background-color: $violet;
   color: white;
-  padding: 16px 0;
+  padding: 10px 0;
+  opacity: .7;
   // @include wire-border;
   opacity: .8;
   // border-top: solid 5px $blue;
   .logo {
     // @include wire-border;
-    padding: 2px 2rem;
-    font-family: 'Handlee' , cursive;
+    padding: 10px 2rem;
+    font-family: 'Noteworthy' , cursive;
     font-size: 5rem;
+    display: flex;
+    align-items: flex-end;
+    .logo-img {
+      width: auto;
+      height: 6rem;
+    }
   }
   nav {
     a {
-      margin: 2rem;
-      padding: 2px 2rem;
+      margin: 2rem 0;
+      padding: 10px 3rem;
       text-decoration: none;
-      color: $orange;
+      color: white;
       // @include wire-border;
+      border-left: 1px solid $black;
+      // border-right: 1px solid $black;
 
       &:hover {
         text-decoration: underline;
-        color: white;
-        background-color: $orange;
+        // color: white;
+        // background-color: $orange;
       }
+
+    }
+    .last-nav-item {
+      border-right: solid 1px $black;
     } 
   }
 }

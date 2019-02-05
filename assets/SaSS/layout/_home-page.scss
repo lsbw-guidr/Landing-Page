@@ -1,102 +1,71 @@
 .home {
     .banner {
-        // position: absolute;
+        object-fit: fill;
         display: flex;
-        z-index: 1;
-        background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-        object-fit: cover;
-        height: 100vh;
-        background-position: center;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
         justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 5rem;
-        text-align: center;
-        line-height: 10rem;
-        @include mobile {
-            height: 50vh;
-            object-fit: contain;
-            font-size: 2rem;
-        }
-        @include tablet {
-            height: 75vh;
-            object-fit: contain;
-            font-size: 4rem;
-        }
-        .banner-text {
-            opacity: .8;
-            span {
-                font-size: 13rem;
-                @include mobile {
-                    font-size: 3rem;
-                }
-                @include tablet {
-                    font-size: 6rem;
-                }
-            }
-            .highlight {
-                text-decoration: underline overline;
-                font-size: 9rem;
-                opacity: .9;
-                @include mobile {
-                    font-size: 3rem;
-                }
-                @include tablet {
-                    font-size: 6rem;
-                }
-            }
-        }
-        button {
-            margin: 20px 0;
-            background-color: orange;
-            padding: 20px 5rem;
-            font-size: 3rem;
-            border-radius: 10px;
-            z-index: 3;
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-    .advertising {
-        @include flex(space-between,
-        row);
-        background-color: $grey;
-        color: white; // @include wire-border;
-        line-height: 4rem;
-        @include tablet {
-            display: flex;
-            flex-direction: column;
+        border: 1px solid black;
+        img {
+            width: 100%;
         }
         @include mobile {
-            display: flex;
-            flex-direction: column;
+            // height: 10vh;
+            // object-fit: cover;
+            // width: 100%;
+            height: 225px;
+        }
+        @include tablet {
+            // height: 40vh;
+            object-fit: cover;
         }
     }
-    .split-column {
-        margin: 2rem 4rem;
-        width: 50%;
-        text-align: center;
+    button {
+        margin: 20px 0;
+        background-color: orange;
+        padding: 20px 5rem;
+        font-size: 3rem;
+        border-radius: 10px;
+        z-index: 3;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.advertising {
+    @include flex(space-between, row);
+    background-color: $grey;
+    color: white; // @include wire-border;
+    line-height: 4rem;
+    @include tablet {
         display: flex;
-        flex-wrap: wrap;
-        @include tablet {
-            width: 100%;
-            margin: 0;
-        }
-        @include mobile {
-            width: 100%;
-            margin: 0;
-        }
-        h2 {
-            font-size: 6rem;
-            line-height: 7rem;
-        }
-        .logo-style {
-            font-family: 'Noteworthy';
-        }
+        flex-direction: column;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.split-column {
+    margin: 2rem 4rem;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+        width: 100%;
+        margin: 0;
+    }
+    @include mobile {
+        width: 100%;
+        margin: 0;
+    }
+    h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+    .logo-style {
+        font-family: 'Noteworthy';
     }
 }

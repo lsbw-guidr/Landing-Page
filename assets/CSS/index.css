@@ -240,68 +240,25 @@ footer .copyright img {
 }
 
 .home .banner {
+  object-fit: fill;
   display: flex;
-  z-index: 1;
-  background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  object-fit: cover;
-  height: 100vh;
-  background-position: center;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 5rem;
-  text-align: center;
-  line-height: 10rem;
+  border: 1px solid black;
+}
+.home .banner img {
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .banner {
-    height: 50vh;
-    object-fit: contain;
-    font-size: 2rem;
+    height: 225px;
   }
 }
 @media (max-width: 1000px) {
   .home .banner {
-    height: 75vh;
-    object-fit: contain;
-    font-size: 4rem;
+    object-fit: cover;
   }
 }
-.home .banner .banner-text {
-  opacity: 0.8;
-}
-.home .banner .banner-text span {
-  font-size: 13rem;
-}
-@media (max-width: 500px) {
-  .home .banner .banner-text span {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 1000px) {
-  .home .banner .banner-text span {
-    font-size: 6rem;
-  }
-}
-.home .banner .banner-text .highlight {
-  text-decoration: underline overline;
-  font-size: 9rem;
-  opacity: 0.9;
-}
-@media (max-width: 500px) {
-  .home .banner .banner-text .highlight {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 1000px) {
-  .home .banner .banner-text .highlight {
-    font-size: 6rem;
-  }
-}
-.home .banner button {
+.home button {
   margin: 20px 0;
   background-color: orange;
   padding: 20px 5rem;
@@ -309,11 +266,12 @@ footer .copyright img {
   border-radius: 10px;
   z-index: 3;
 }
-.home .banner button a {
+.home button a {
   text-decoration: none;
   color: white;
 }
-.home .advertising {
+
+.advertising {
   display: flex;
   justify-content: space-between;
   align-items: row;
@@ -323,18 +281,19 @@ footer .copyright img {
   line-height: 4rem;
 }
 @media (max-width: 1000px) {
-  .home .advertising {
+  .advertising {
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .home .advertising {
+  .advertising {
     display: flex;
     flex-direction: column;
   }
 }
-.home .split-column {
+
+.split-column {
   margin: 2rem 4rem;
   width: 50%;
   text-align: center;
@@ -342,22 +301,22 @@ footer .copyright img {
   flex-wrap: wrap;
 }
 @media (max-width: 1000px) {
-  .home .split-column {
+  .split-column {
     width: 100%;
     margin: 0;
   }
 }
 @media (max-width: 500px) {
-  .home .split-column {
+  .split-column {
     width: 100%;
     margin: 0;
   }
 }
-.home .split-column h2 {
+.split-column h2 {
   font-size: 6rem;
   line-height: 7rem;
 }
-.home .split-column .logo-style {
+.split-column .logo-style {
   font-family: "Noteworthy";
 }
 

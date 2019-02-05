@@ -4,17 +4,21 @@
 
 
 <head>
+
+    <title>Guidr</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link src="assets/font/Noteworthy.ttc" rel="stylesheet">
-
-
-    <title>Guidr</title>
     <link rel="stylesheet" href="assets/CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
     <script src="./assets/javascript/tabs.js" async></script>
+    <script src="./assets/javascript/main.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 
 </head>
 
@@ -26,12 +30,11 @@
                 <div class="logo">
                     <img src="images/icons/logo with name.png" class="logo-img">
                 </div>
-                <!-- navigation code here -->
                 <div class="navigation">
                     <nav>
                         <a href="#">HOME</a>
-                        <a href="#">FEATURES</a>
-                        <a href="#">ADVENTURES</a>
+                        <a href="#">TRIPS</a>
+                        <a href="#">GUIDES</a>
                         <a href="#">CONTACT</a>
                     </nav>
                 </div>
@@ -45,51 +48,25 @@
         <main>
 
             <!-- BANNER -->
+            <div class="container">
 
-            <section class="banner">
-                <div class="banner-text">
+                <section class="banner">
+                    <!-- <div class="banner-text">
                     <h1>LOSE YOUR<span class="highlight">SELF</span> IN</br> <span>ADVENTURE</span></Adventure></br>
                         <span class="highlight"> SHARE</span> YOUR
                         EXPERIENCE.</h1>
-                </div>
-            </section>
-            <div class="container">
-
-                <!-- ADVERTISING SECTION -->
-
-                <section class="advertising">
-                    <div class="split-column">
-                        <h2>Why use guidr?</h2>
-                        <p>Be so very light. Be a gentle whisper. That easy. We artists are a different breed of
-                            people.
-                            We're
-                            a happy bunch. It's a very cold picture, I may have to go get my coat. It’s about to freeze
-                            me
-                            to
-                            death. Now let's put some happy little clouds in here. Let's make a happy little mountain
-                            now.</p>
-                    </div>
-                    <div class="split-column">
-                        <h2>Core Feature?</h2>
-                        <ul>
-
-                            <li> I will take some magic white, and a little bit of Vandyke brown and a little touch of
-                                yellow.</li>
-                            <li>Just go back and put one little more happy tree in there. We don't have
-                                anything but happy trees here.</li>
-                            We'll put some happy little leaves here and there.
-                            <li>Didn't you know you had that much power? You can move mountains. You can do anything.</li>
-                        </ul>
-                    </div>
-
+                </div> -->
+                    <!-- <a href='#ad'><button>Learn More</button></a> -->
+                    <img src="./images/colormatch/outdoor.png" alt="">
                 </section>
+
 
                 <!-- TABS COMPONENTS -->
 
                 <section class="list">
                     <div class="tabs">
                         <div class="topics">
-                            <span class="title">TRENDING TRIPS:</span>
+                            <span class="trending">TRENDING TRIPS:</span>
                             <div class="trip-filter">
                                 <div data-tab="all" class="tab active-tab">ALL</div>
                                 <div data-tab="professional" class="tab">PROFESSIONAL</div>
@@ -103,6 +80,115 @@
 
                     <section class="main-page">
                         <div class="card" data-tab="personal">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/colormatch/hiking.png" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/colormatch/out.png" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/colormatch/snow.png" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="personal">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/colormatch/sky.png" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/hiking/man-person-jumping-desert.jpg" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
+                            <div class="image-container">
+                                <img src="images/hiking/nature-person-red-woman.jpg" class="image">
+                            </div>
+                            <div class="title">
+                                <h2>Amazing Trip!</h2>
+                                <div class="author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>By John Doe</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
+                                perspiciatis
+                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
+                                repudiandae,
+                                hic omnis itaque!</p>
+                        </div>
+                        <div class="card" data-tab="personal">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
                             <div class="image-container">
                                 <img src="images/hiking/pexels-photo-1076081.jpeg" class="image">
                             </div>
@@ -120,8 +206,9 @@
                                 hic omnis itaque!</p>
                         </div>
                         <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
                             <div class="image-container">
-                                <img src="images/hiking/man-person-jumping-desert.jpg" class="image">
+                                <img src="images/hiking/pexels-photo-236973.jpeg" class="image">
                             </div>
                             <div class="title">
                                 <h2>Amazing Trip!</h2>
@@ -137,8 +224,9 @@
                                 hic omnis itaque!</p>
                         </div>
                         <div class="card" data-tab="professional">
+                            <div class="date"><i class="fas fa-camera"></i>Dec 22, 2018</div>
                             <div class="image-container">
-                                <img src="images/hiking/man-person-jumping-desert.jpg" class="image">
+                                <img src="images/hiking/pexels-photo-372098.jpeg" class="image">
                             </div>
                             <div class="title">
                                 <h2>Amazing Trip!</h2>
@@ -153,26 +241,40 @@
                                 repudiandae,
                                 hic omnis itaque!</p>
                         </div>
-                        <div class="card" data-tab="personal">
-                            <div class="image-container">
-                                <img src="images/hiking/man-person-jumping-desert.jpg" class="image">
-                            </div>
-                            <div class="title">
-                                <h2>Amazing Trip!</h2>
-                                <div class="author">
-                                    <i class="fas fa-user-circle"></i>
-                                    <h3>By John Doe</h3>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam esse, sint
-                                perspiciatis
-                                dicta molestiae qui nobis? Libero blanditiis ab obcaecati modi id qui, sunt, in
-                                repudiandae,
-                                hic omnis itaque!</p>
-                        </div>
+
                     </section>
                 </section>
+                <!-- ADVERTISING SECTION -->
+
+                <section class="advertising" id='ad'>
+                    <div class="split-column">
+                        <h2>Why use guidr?</h2>
+                        <p>Be so very light. Be a gentle whisper. That easy. We artists are a different breed of
+                            people.
+                            We're
+                            a happy bunch. It's a very cold picture, I may have to go get my coat. It’s about to freeze
+                            me
+                            to
+                            death. Now let's put some happy little clouds in here. Let's make a happy little mountain
+                            now.</p>
+                    </div>
+                    <div class="split-column">
+                        <h2>Core Feature?</h2>
+                        <ul>
+
+                            <li> I will take some magic white, and a little bit of Vandyke brown and a
+                                little touch of
+                                yellow.</li>
+                            <li>Just go back and put one little more happy tree in there. We don't have
+                                anything but happy trees here.</li>
+                            We'll put some happy little leaves here and there.
+                            <li>Didn't you know you had that much power? You can move mountains. You can do anything.</li>
+                        </ul>
+                    </div>
+
+                </section>
             </div>
+
         </main>
         <footer>
             <div class="footer-icons">

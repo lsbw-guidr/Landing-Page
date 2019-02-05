@@ -2,12 +2,14 @@ header {
     width: 100%;
     color: white;
     .main-nav {
-        // position: fixed;
         width: 100%;
         @include flex(space-between, center, row);
         background-color: $violet;
         padding: 2rem 4rem;
-        border-bottom: 1px solid-black;
+        border-bottom: 1px solid-black; // @include desktop {
+        //     position: fixed;
+        //     opacity: .8;
+        // }
         @include tablet {
             display: flex;
             flex-direction: column;
@@ -18,33 +20,20 @@ header {
             padding: 0;
         }
         .login {
-            @include custom-btn($grey, white);
-            margin-left: 5rem; // @include tablet {
-            //     margin: 1rem 0;
-            // }
-            // @include mobile {
-            //     margin: 1rem 0;
-            // }
+            @include list-btn($grey);
+            margin-left: 5rem;
+            &:hover {
+                background-color: $orange;
+            }
         }
-    } // .search {
-    //     @include tablet {
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
-    //     @include mobile {
-    //         display: flex;
-    //         flex-direction: column;
-    //     }
-    // }
+    }
     .logo {
         // padding: 10px 2rem;
         font-family: 'Noteworthy', cursive;
         display: flex;
         .logo-img {
             width: auto;
-            height: 8rem;
+            height: 6rem;
         }
     }
     nav {

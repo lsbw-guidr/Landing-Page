@@ -2,6 +2,12 @@
 BREAKPOINTS
 *********************/
 
+@mixin desktop() {
+    @media (min-width: 1001px) {
+        @content;
+    }
+}
+
 @mixin mobile() {
     @media (max-width: 500px) {
         @content;
@@ -40,6 +46,9 @@ BREAKPOINTS
     background-color: $background;
     border-radius: 10px;
     text-decoration: none;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     &:hover {
         color: $background;
         background-color: $color;
@@ -55,4 +64,7 @@ BREAKPOINTS
     border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.281);
 }

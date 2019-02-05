@@ -4,9 +4,7 @@
         display: flex;
         z-index: 1;
         background-image: url("images/colormatch/pexels-photo-206359.jpeg");
-        /* Full height */
-        height: 400px; // width: 100%;
-        /* Center and scale the image nicely */
+        height: 850px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,52 +26,6 @@
             }
         }
     }
-    .main-page {
-        display: flex;
-        width: 100%;
-        padding-top: 20px;
-        .image {
-            height: auto;
-            width: 40rem;
-        }
-        .left-column {
-            width: 48%;
-            display: flex;
-            flex-direction: column;
-            border-right: 1px solid black;
-            align-items: center;
-            padding: 1rem;
-            .post {
-                line-height: 2.4rem;
-                margin: 0 2rem;
-                .title {
-                    margin-bottom: 10px;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .author {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin-right: 5rem;
-                }
-                .image {
-                    // margin: 2rem;
-                }
-                p {
-                    // margin: 0 1.6rem;
-                }
-            }
-        }
-        .right-column {
-            width: 48%;
-            display: flex;
-            flex-direction: column;
-            .image {
-                width: 50%;
-            }
-        }
-    }
     .advertising {
         @include flex(space-between,
         row);
@@ -90,12 +42,6 @@
         }
         .logo-style {
             font-family: 'Noteworthy';
-        }
-    }
-    .list {
-        .card {
-            background-color: $grey;
-            margin: 10px 1rem;
         }
     }
 }

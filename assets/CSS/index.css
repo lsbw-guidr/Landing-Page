@@ -239,7 +239,7 @@ footer .copyright img {
 .home .banner {
   display: flex;
   z-index: 1;
-  background-image: url("../../../images/background.jpg");
+  background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   object-fit: cover;
   height: 100vh;
   background-position: center;

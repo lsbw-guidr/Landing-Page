@@ -245,17 +245,21 @@ footer .copyright img {
   justify-content: center;
   border: 1px solid black;
 }
-.home .banner img {
-  width: 100%;
-}
 @media (max-width: 500px) {
   .home .banner {
     height: 225px;
   }
+  .home .banner img {
+    width: 100%;
+  }
 }
 @media (max-width: 1000px) {
   .home .banner {
+    height: 400px;
     object-fit: cover;
+  }
+  .home .banner img {
+    width: 100%;
   }
 }
 .home button {

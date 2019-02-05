@@ -6,7 +6,6 @@
 <head>
 
     <title>Guidr</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +14,10 @@
     <link src="assets/font/Noteworthy.ttc" rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
     <script src="./assets/javascript/tabs.js" async></script>
     <script src="./assets/javascript/main.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 
 </head>
@@ -54,12 +55,13 @@
                         <span class="highlight"> SHARE</span> YOUR
                         EXPERIENCE.</h1>
                 </div>
+                <a href='#ad'><button>Learn More</button></a>
+
             </section>
             <div class="container">
-
                 <!-- ADVERTISING SECTION -->
 
-                <section class="advertising">
+                <section class="advertising" id='ad'>
                     <div class="split-column">
                         <h2>Why use guidr?</h2>
                         <p>Be so very light. Be a gentle whisper. That easy. We artists are a different breed of
@@ -75,7 +77,8 @@
                         <h2>Core Feature?</h2>
                         <ul>
 
-                            <li> I will take some magic white, and a little bit of Vandyke brown and a little touch of
+                            <li> I will take some magic white, and a little bit of Vandyke brown and a
+                                little touch of
                                 yellow.</li>
                             <li>Just go back and put one little more happy tree in there. We don't have
                                 anything but happy trees here.</li>
@@ -91,7 +94,7 @@
                 <section class="list">
                     <div class="tabs">
                         <div class="topics">
-                            <span class="title">TRENDING TRIPS:</span>
+                            <span class="trending">TRENDING TRIPS:</span>
                             <div class="trip-filter">
                                 <div data-tab="all" class="tab active-tab">ALL</div>
                                 <div data-tab="professional" class="tab">PROFESSIONAL</div>

@@ -20,6 +20,9 @@
             flex-direction: column;
         }
     }
+    .trending {
+        font-size: 3rem;
+    }
     .tab {
         // margin: 0 7rem; // @include wire-border;
         display: flex;
@@ -60,13 +63,11 @@
         }
         @include tablet {
             width: 100%;
-        }
-        // .image-container {
+        } // .image-container {
         //     z-index: 1;
         // }
         .image {
             z-index: 1;
-
             width: 45vh;
             height: auto;
             object-fit: cover;

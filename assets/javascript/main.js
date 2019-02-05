@@ -1,6 +1,14 @@
-const bannerText = document.querySelector(".banner-text");
+// const tab = document.querySelector(".tab");
 
-bannerText.addEventListener("onload", e => {
-    TweenMax.to(".green", 3, { rotationX: 360 });
+// tab.addEventListener("click", e => {
+//     console.log(`Work button fired a click event!`);
+// });
+
+
+const card = document.querySelector('.card');
+card.addEventListener('click', e => {
+    // console.log(`Work button fired a click event!`);
+    // ALL about stopping events from bubbling
+    e.stopPropagation();
+
 });
-

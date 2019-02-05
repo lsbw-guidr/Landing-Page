@@ -95,6 +95,7 @@ html {
   font-size: 62.5%;
   font-family: Rubik, sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -245,6 +246,7 @@ footer .copyright img {
   object-fit: cover;
   height: 100vh;
   background-position: center;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -298,6 +300,18 @@ footer .copyright img {
   .home .banner .banner-text .highlight {
     font-size: 6rem;
   }
+}
+.home .banner button {
+  margin: 20px 0;
+  background-color: orange;
+  padding: 20px 5rem;
+  font-size: 3rem;
+  border-radius: 10px;
+  z-index: 3;
+}
+.home .banner button a {
+  text-decoration: none;
+  color: white;
 }
 .home .advertising {
   display: flex;
@@ -371,6 +385,9 @@ footer .copyright img {
     display: flex;
     flex-direction: column;
   }
+}
+.list .trending {
+  font-size: 3rem;
 }
 .list .tab {
   display: flex;

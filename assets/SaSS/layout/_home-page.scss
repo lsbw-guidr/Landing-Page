@@ -3,8 +3,9 @@
         // position: absolute;
         display: flex;
         z-index: 1;
-        background-image: url("images/colormatch/pexels-photo-206359.jpeg");
-        height: 850px;
+        background-image: url("/images/colormatch/pexels-photo-206359.jpeg");
+        object-fit: cover;
+        height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -13,16 +14,38 @@
         color: white;
         font-size: 5rem;
         text-align: center;
-        line-height: 10rem; // border-bottom: 5px solid $violet;
+        line-height: 10rem;
+        @include mobile {
+            height: 50vh;
+            object-fit: contain;
+            font-size: 2rem;
+        } // border-bottom: 5px solid $violet;
+        @include tablet {
+            height: 75vh;
+            object-fit: contain;
+            font-size: 4rem;
+        }
         .banner-text {
             opacity: .8;
             span {
                 font-size: 13rem;
+                @include mobile {
+                    font-size: 3rem;
+                }
+                @include tablet {
+                    font-size: 6rem;
+                }
             }
             .highlight {
                 text-decoration: underline overline;
                 font-size: 9rem;
                 opacity: .9;
+                @include mobile {
+                    font-size: 3rem;
+                }
+                @include tablet {
+                    font-size: 6rem;
+                }
             }
         }
     }
@@ -31,11 +54,28 @@
         row);
         background-color: $grey;
         color: white; // @include wire-border;
+        line-height: 4rem;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
     }
     .split-column {
-        margin: 10rem 4rem;
+        margin: 2rem 4rem;
         width: 50%;
         text-align: center;
+        @include tablet {
+            width: 100%;
+            margin: 0;
+        }
+        @include mobile {
+            width: 100%;
+            margin: 0;
+        }
         h2 {
             font-size: 6rem;
             line-height: 7rem;

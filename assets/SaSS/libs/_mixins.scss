@@ -2,49 +2,57 @@
 BREAKPOINTS
 *********************/
 
-@mixin breakpoint($point) {
-    @if $point == desktop {
-      @media (max-width: 1000px) { @content ; }
-   }
-     @else if $point == tablet {
-      @media (max-width: 800px) { @content ; }
-   }
-   @else if $point == mobileonly {
-      @media (max-width: 500px)  { @content ; }
+@mixin mobile() {
+    @media (max-width: 500px) {
+        @content;
     }
- }
- 
-//  Use Example
-// @include breakpoint(breakpointname) {
-//     /* Styles */
-// }
+}
+
+@mixin tablet() {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
 
 @mixin wire-border() {
-   border: 1px solid red;
+    border: 1px solid red;
 }
 
 @mixin width-100() {
-   width: 100%;
+    width: 100%;
 }
+
 @mixin flex($jc: none, $ai: none, $dir: row) {
-   display: flex;
-   justify-content: $jc;
-   align-items: $ai;
-   flex-direction: $dir;
- }
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $dir;
+}
 
 @mixin logo-font() {
-   font-family: 'Noteworthy';
+    font-family: 'Noteworthy';
 }
+
 @mixin custom-btn($color, $background) {
-   padding: 10px 4rem;
-   border: 1px solid black;
-   color: $color;
-   background-color: $background;
-   border-radius: 10px;
-   text-decoration: none;
-   &:hover {
-      color: $background;
-      background-color: $color;
-   }
- }
+    padding: 10px 4rem;
+    border: 1px solid black;
+    color: $color;
+    background-color: $background;
+    border-radius: 10px;
+    text-decoration: none;
+    &:hover {
+        color: $background;
+        background-color: $color;
+        cursor: pointer;
+    }
+}
+
+@mixin list-btn($background) {
+    padding: 10px 4rem;
+    border: 1px solid black;
+    color: white;
+    background-color: $background;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}

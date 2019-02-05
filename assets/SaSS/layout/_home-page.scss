@@ -3,10 +3,7 @@
         // position: absolute;
         display: flex;
         z-index: 1;
-
         background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
-       
         object-fit: cover;
         height: 100vh;
         background-position: center;
@@ -22,7 +19,7 @@
             height: 50vh;
             object-fit: contain;
             font-size: 2rem;
-        } // border-bottom: 5px solid $violet;
+        }
         @include tablet {
             height: 75vh;
             object-fit: contain;
@@ -71,6 +68,8 @@
         margin: 2rem 4rem;
         width: 50%;
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
         @include tablet {
             width: 100%;
             margin: 0;

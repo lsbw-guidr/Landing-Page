@@ -20,7 +20,7 @@ header {
                 margin: 10px 0 5px 0;
             }
             .login {
-                @include list-btn($grey);
+                @include custom-btn(white, $grey);
                 margin-left: 5rem;
                 @include mobile {
                     margin: 20px 0;
@@ -60,6 +60,9 @@ header {
         }
         .nav-container {
             display: block;
+            @include mobile {
+                width: 100%;
+            }
         }
         .nav--open {
             @include mobile {

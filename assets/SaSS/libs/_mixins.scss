@@ -57,7 +57,7 @@ BREAKPOINTS
 }
 
 @mixin list-btn($background) {
-    padding: 10px 4rem;
+    padding: 0 4rem;
     border: 1px solid black;
     color: white;
     background-color: $background;

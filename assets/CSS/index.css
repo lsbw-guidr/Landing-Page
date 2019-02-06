@@ -381,6 +381,7 @@ footer .copyright img {
 
 .split-column {
   margin: 2rem 4rem;
+  padding: 2rem 4rem;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -432,6 +433,9 @@ footer .copyright img {
     display: flex;
     flex-direction: column;
   }
+}
+.list .trip-filter button {
+  padding: 10px 4.5rem;
 }
 .list .trending {
   font-size: 3rem;

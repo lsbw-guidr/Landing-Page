@@ -107,7 +107,6 @@ li {
 }
 
 header {
-  width: 100%;
   color: white;
 }
 header .main-nav {
@@ -129,11 +128,18 @@ header .main-nav {
 @media (max-width: 500px) {
   header .main-nav {
     display: flex;
+    justify-content: none;
+    align-items: none;
     flex-direction: column;
     padding: 0;
   }
 }
-header .main-nav .login {
+@media (max-width: 500px) {
+  header .main-nav .sign-up {
+    margin: 10px 0 5px 0;
+  }
+}
+header .main-nav .sign-up .login {
   padding: 10px 4rem;
   border: 1px solid black;
   color: white;
@@ -146,46 +152,87 @@ header .main-nav .login {
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.281);
   margin-left: 5rem;
 }
-header .main-nav .login:hover {
+@media (max-width: 500px) {
+  header .main-nav .sign-up .login {
+    margin: 20px 0;
+  }
+}
+header .main-nav .sign-up .login:hover {
   background-color: #F5A623;
 }
-header .logo {
+header .main-nav .logo {
   font-family: "Noteworthy", cursive;
   display: flex;
 }
-header .logo .logo-img {
+header .main-nav .logo .logo-img {
   width: auto;
   height: 6rem;
 }
-header nav {
-  padding-right: 18 rem;
-}
 @media (max-width: 500px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
+  header .main-nav i {
+    display: none;
   }
 }
-header nav a {
+@media (max-width: 500px) {
+  header .main-nav .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .main-nav .nav-btn {
+  display: none;
+}
+@media (max-width: 500px) {
+  header .main-nav .nav-btn {
+    display: block;
+  }
+}
+header .main-nav .nav-container {
+  display: block;
+}
+@media (max-width: 500px) {
+  header .main-nav .nav--open {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header .main-nav nav {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+}
+header .main-nav nav a {
   margin: 2rem 0;
   padding: 10px 3rem;
   text-decoration: none;
   color: white;
 }
 @media (max-width: 1000px) {
-  header nav a {
+  header .main-nav nav a {
     margin: 0 2em;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
-  header nav a {
+  header .main-nav nav a {
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid black;
   }
 }
-header nav a:hover {
+header .main-nav nav a:hover {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  header .main-nav nav a:hover {
+    background-color: #F5A623;
+  }
 }
 
 footer {
@@ -242,8 +289,12 @@ footer .copyright img {
 }
 .home .banner {
   object-fit: fill;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+.home .banner img {
+  width: 100%;
 }
 .home .banner .mobile-head {
   display: none;
@@ -345,6 +396,11 @@ footer .copyright img {
 }
 .list .trending {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .list .trending {
+    font-size: 2rem;
+  }
 }
 .list .tab {
   display: flex;

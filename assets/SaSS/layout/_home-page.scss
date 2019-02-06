@@ -2,10 +2,11 @@
     padding: 0 10px 0 10px;
     .banner {
         object-fit: fill;
+        width: 100%;
         display: flex;
         justify-content: center; // border: 3px solid black;
         img {
-            // width: 100%;
+            width: 100%;
         }
         .mobile-head {
             display: none;

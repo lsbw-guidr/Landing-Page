@@ -146,11 +146,15 @@ header .main-nav .sign-up .login {
   background-color: #4A4A4A;
   border-radius: 10px;
   text-decoration: none;
-  cursor: pointer;
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.281);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   margin-left: 5rem;
+}
+header .main-nav .sign-up .login:hover {
+  color: #4A4A4A;
+  background-color: white;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   header .main-nav .sign-up .login {
@@ -191,6 +195,11 @@ header .main-nav .nav-btn {
 }
 header .main-nav .nav-container {
   display: block;
+}
+@media (max-width: 500px) {
+  header .main-nav .nav-container {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   header .main-nav .nav--open {
@@ -345,9 +354,11 @@ footer .copyright img {
 .split-column {
   margin: 2rem 4rem;
   width: 50%;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
+}
+.split-column h2 {
+  text-align: center;
 }
 @media (max-width: 1000px) {
   .split-column {
@@ -406,7 +417,7 @@ footer .copyright img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 4rem;
+  padding: 0 4rem;
   border: 1px solid black;
   color: white;
   background-color: #F5A623;
@@ -419,7 +430,7 @@ footer .copyright img {
   margin: 0 2rem;
 }
 .list .active-tab {
-  padding: 10px 4rem;
+  padding: 0 4rem;
   border: 1px solid black;
   color: white;
   background-color: #661FFF;
@@ -527,6 +538,55 @@ footer .copyright img {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+}
+
+.about html {
+  color: white;
+}
+.about h1 {
+  font-size: 5rem;
+  padding: 30px 0;
+  text-align: center;
+  color: black;
+}
+.about h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.about h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+.about p {
+  color: black;
+}
+.about .row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.about .row a {
+  display: flex;
+  align-items: center;
+  text-decoration-color: none;
+  text-decoration: none;
+  color: white;
+}
+.about .row i {
+  margin-left: 10px;
+}
+.about .team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #4A4A4A;
+}
+.about .underline {
+  border-bottom: 1px solid black;
 }
 
 /*# sourceMappingURL=index.css.map */

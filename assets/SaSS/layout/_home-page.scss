@@ -51,9 +51,11 @@
 }
 
 .split-column {
+    h2 {
+        text-align: center;
+    }
     margin: 2rem 4rem;
     width: 50%;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     @include tablet {

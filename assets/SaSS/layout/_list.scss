@@ -22,6 +22,9 @@
     }
     .trending {
         font-size: 3rem;
+        @include mobile {
+            font-size: 2rem;
+        }
     }
     .tab {
         // margin: 0 7rem; // @include wire-border;

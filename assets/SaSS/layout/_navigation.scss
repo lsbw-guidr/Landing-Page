@@ -1,62 +1,109 @@
 header {
-    width: 100%;
+    // width: 100%;
     color: white;
     .main-nav {
         width: 100%;
         @include flex(space-between, center, row);
         background-color: $violet;
         padding: 2rem 4rem;
-        border-bottom: 1px solid-black; // @include desktop {
-        //     position: fixed;
-        //     opacity: .8;
-        // }
+        border-bottom: 1px solid-black;
         @include tablet {
             display: flex;
             flex-direction: column;
         }
         @include mobile {
-            display: flex;
-            flex-direction: column;
+            @include flex(none, none, column);
             padding: 0;
         }
-        .login {
-            @include list-btn($grey);
-            margin-left: 5rem;
-            &:hover {
-                background-color: $orange;
-            }
-        }
-    }
-    .logo {
-        // padding: 10px 2rem;
-        font-family: 'Noteworthy', cursive;
-        display: flex;
-        .logo-img {
-            width: auto;
-            height: 6rem;
-        }
-    }
-    nav {
-        padding-right: 18 rem;
-        @include mobile {
-            display: flex;
-            flex-direction: column;
-        }
-        a {
-            margin: 2rem 0;
-            padding: 10px 3rem;
-            text-decoration: none;
-            color: white;
-            @include tablet {
-                margin: 0 2em;
-                padding: 0;
-            }
+        .sign-up {
             @include mobile {
-                margin: 0;
-                padding: 0;
+                margin: 10px 0 5px 0;
             }
-            &:hover {
-                text-decoration: underline;
+            .login {
+                @include list-btn($grey);
+                margin-left: 5rem;
+                @include mobile {
+                    margin: 20px 0;
+                }
+                &:hover {
+                    background-color: $orange;
+                }
+            }
+        }
+        .logo {
+            // padding: 10px 2rem;
+            font-family: 'Noteworthy', cursive;
+            display: flex;
+            .logo-img {
+                width: auto;
+                height: 6rem;
+            }
+        }
+        i {
+            @include mobile {
+                display: none;
+            }
+        }
+        .navigation {
+            @include mobile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .nav-btn {
+            display: none; // width: 50px;
+            @include mobile {
+                display: block;
+            }
+        }
+        .nav-container {
+            display: block;
+        }
+        .nav--open {
+            @include mobile {
+                display: none;
+            }
+            a {
+                // width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // &:hover {
+                //     background-color: orange;
+                // }
+            }
+        }
+        nav {
+            @include mobile {
+                display: block;
+                padding: 0;
+                width: 100%;
+            }
+            a {
+                margin: 2rem 0;
+                padding: 10px 3rem;
+                text-decoration: none;
+                color: white;
+                @include tablet {
+                    margin: 0 2em;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+                @include mobile {
+                    margin: 0;
+                    padding: 0; // border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    @include mobile {
+                        background-color: $orange;
+                    }
+                }
             }
         }
     }

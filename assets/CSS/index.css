@@ -381,6 +381,7 @@ footer .copyright img {
 
 .split-column {
   margin: 2rem 4rem;
+  padding: 2rem 4rem;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -433,6 +434,9 @@ footer .copyright img {
     flex-direction: column;
   }
 }
+.list .trip-filter button {
+  padding: 10px 4.5rem;
+}
 .list .trending {
   font-size: 3rem;
 }
@@ -480,24 +484,16 @@ footer .copyright img {
     width: 100%;
   }
 }
-.list .main-page .date {
-  position: absolute;
-  z-index: 2;
-  background-color: #F5A623;
-  font-size: 1.2rem;
-  padding: 0 2rem;
-}
-.list .main-page .date i {
-  margin-right: 1rem;
-}
 .list .card {
   position: relative;
   margin: 10px 0;
+  padding: 20px 1.5rem;
   width: 47%;
   height: auto;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid black;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .list .card {
@@ -508,6 +504,16 @@ footer .copyright img {
   .list .card {
     width: 100%;
   }
+}
+.list .card .date {
+  position: absolute;
+  z-index: 2;
+  background-color: #F5A623;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+.list .card .date i {
+  margin-right: 1rem;
 }
 .list .card .image {
   z-index: 1;
@@ -532,43 +538,108 @@ footer .copyright img {
   display: flex;
   align-items: center;
 }
-.list .card-small {
-  margin: 10px 0;
+.list .card button {
+  padding: 10px 4rem;
+  border: 1px solid black;
+  color: white;
+  background-color: #661FFF;
+  border-radius: 10px;
+  text-decoration: none;
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  justify-self: flex-end;
   width: 20%;
+  padding: 5px 1rem;
+  align-self: flex-end;
+}
+.list .card button:hover {
+  color: #661FFF;
+  background-color: white;
+  cursor: pointer;
+}
+.list .small-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.list .small-cards .card-small {
+  position: relative;
+  margin: 10px 0;
+  padding: 20px 1.5rem;
+  width: 30%;
   height: auto;
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid black;
+  line-height: 25px;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .list .card-small {
+  .list .small-cards .card-small {
     width: 100%;
   }
 }
 @media (max-width: 1000px) {
-  .list .card-small {
+  .list .small-cards .card-small {
     width: 100%;
   }
 }
-.list .card-small .image {
-  width: 20%;
+.list .small-cards .card-small .image {
+  z-index: 1;
+  width: 25vh;
   height: auto;
   object-fit: cover;
 }
 @media (max-width: 1000px) {
-  .list .card-small .image {
+  .list .small-cards .card-small .image {
     object-fit: contain;
     width: 100%;
     height: auto;
   }
 }
-.list .card-small .title {
-  font-size: 3rem;
+.list .small-cards .card-small .title {
+  font-size: 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.list .card-small .title .author {
+.list .small-cards .card-small .title .author {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+  margin: 10px 0;
+}
+.list .small-cards .card-small .date {
+  position: absolute;
+  z-index: 2;
+  background-color: #F5A623;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+.list .small-cards .card-small .date i {
+  margin-right: 1rem;
+}
+.list .small-cards .card-small button {
+  padding: 10px 4rem;
+  border: 1px solid black;
+  color: white;
+  background-color: #661FFF;
+  border-radius: 10px;
+  text-decoration: none;
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  justify-self: flex-end;
+  width: 30%;
+  padding: 5px 2rem;
+  align-self: flex-end;
+}
+.list .small-cards .card-small button:hover {
+  color: #661FFF;
+  background-color: white;
+  cursor: pointer;
 }
 
 .about html {

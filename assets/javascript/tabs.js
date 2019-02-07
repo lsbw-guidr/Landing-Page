@@ -71,3 +71,37 @@ class TabCard {
 */
 let tabs = document.querySelectorAll('.tab');
 tabs.forEach(tab => new TabLink(tab));
+
+
+
+class Dropdown {
+    constructor(ele) {
+        this.ele = ele;
+
+        this.button = this.ele.querySelector('.dropdown-button');
+        console.log(this.button);
+        this.content = this.ele.querySelector('.dropdown-content');
+        console.log(this.content);
+        this.button.addEventListener('click', () => {
+            this.toggleContent();
+        })
+    }
+
+    toggleContent() {
+        this.content.classList.toggle('dropdown-hidden');
+    }
+}
+
+
+let dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(dropdown => new Dropdown(dropdown));
+
+
+var hiddenMenu = { prop: 10 };
+TweenMax.to(hiddenMenu, 1, {
+    prop: 200,
+    //onUpdate fires each time the tween updates; we'll explain callbacks later.
+    onUpdate: function () {
+        console.log(hiddenMenu.prop); //logs the value on each update.
+    }
+});

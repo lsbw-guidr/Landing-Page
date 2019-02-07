@@ -54,7 +54,11 @@
         margin: 20px 0;
     }
     .rows {
-        margin: 20px 2rem;
+        padding: 20px 4rem;
+    }
+    .logo {
+        height: 50px;
+        width: auto;
     }
 }
 
@@ -69,7 +73,12 @@
         display: flex;
         border-bottom: 1px solid black;
         @include mobile {
-            display: block;
+            @include mobile {
+                width: 100%;
+                display: block;
+                margin: 0;
+                padding: 0 0;
+            }
         }
         li {
             margin: 0 2rem;
@@ -78,8 +87,8 @@
 }
 
 .split-column {
-    margin: 2rem 4rem;
-    padding: 2rem 4rem;
+    // margin: 2rem 4rem;
+    padding: 2rem 2rem;
     width: 45%;
     @include tablet {
         width: 100%;

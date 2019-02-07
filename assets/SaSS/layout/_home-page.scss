@@ -54,7 +54,11 @@
         margin: 20px 0;
     }
     .rows {
-        margin: 20px 2rem;
+        padding: 20px 4rem;
+    }
+    .logo {
+        height: 50px;
+        width: auto;
     }
 }
 
@@ -69,7 +73,12 @@
         display: flex;
         border-bottom: 1px solid black;
         @include mobile {
-            display: block;
+            @include mobile {
+                width: 100%;
+                display: block;
+                margin: 0;
+                padding: 0 0;
+            }
         }
         li {
             margin: 0 2rem;
@@ -78,8 +87,8 @@
 }
 
 .split-column {
-    margin: 2rem 4rem;
-    padding: 2rem 4rem;
+    // margin: 2rem 4rem;
+    padding: 2rem 2rem;
     width: 45%;
     @include tablet {
         width: 100%;
@@ -97,5 +106,95 @@
     }
     .logo-style {
         font-family: 'Noteworthy';
+    }
+}
+
+.registration {
+    width: 27%;
+    margin: 20px 1rem;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+    form {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .right-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 25px;
+        margin: 20px 0;
+        .card-small {
+            position: relative;
+            margin: 10px 0;
+            padding: 20px 1.5rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid black;
+            line-height: 25px;
+            justify-content: space-between;
+            &:hover {
+                @include shadow-drop-2-center; // @include text-pop-up-top;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            @include tablet {
+                width: 100%;
+            }
+            .image-container {
+                width: 100%;
+            }
+            .image {
+                z-index: 1;
+                height: auto;
+                object-fit: fit;
+                box-shadow: 2px 5px 5px rgba(68, 68, 68, 0.6);
+                object-fit: cover;
+                height: 17vh;
+            }
+            .title {
+                font-size: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .author {
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                }
+            }
+            .date {
+                position: absolute;
+                z-index: 2;
+                background-color: $orange;
+                font-size: 1.2rem;
+                padding: 0 2rem;
+                i {
+                    margin-right: 1rem;
+                }
+            }
+            button {
+                @include custom-btn(white, $violet); // width: 10rem;
+                // height: 5rem;
+                justify-self: flex-end;
+                width: 30%;
+                padding: 5px 2rem;
+                align-self: flex-end;
+                ;
+            }
+        }
+        .title {
+            display: flex;
+        }
     }
 }

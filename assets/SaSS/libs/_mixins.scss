@@ -70,37 +70,37 @@ BREAKPOINTS
 }
 
 // CLASS
-@mixin shadow-drop-2-center {
+@mixin shadow-drop-2-center() {
     -webkit-animation: shadow-drop-2-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@mixin shadow-inset-center {
+@mixin shadow-inset-center() {
     -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@mixin text-focus-in {
+@mixin text-focus-in() {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-@mixin wobble-hor-bottom {
+@mixin wobble-hor-bottom() {
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
 }
 
-@mixin heartbeat {
+@mixin heartbeat() {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-@mixin kenburns-top {
+@mixin kenburns-top() {
     -webkit-animation: kenburns-top 5s ease-out both;
     animation: kenburns-top 5s ease-out both;
 }
 
-@mixin text-pop-up-top {
+@mixin text-pop-up-top() {
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

@@ -1,20 +1,20 @@
 .list {
     .tabs {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
     }
     .topics {
         display: flex;
         justify-content: space-evenly;
-        margin: 10px 0 30px 0;
+        margin: 10px 0;
         align-items: center;
         flex-direction: column;
     }
     .trending {
         font-size: 4rem;
-        color: $violet;
+        color: black;
         font-weight: 800; // @include text-focus-in;
         @include mobile {
             font-size: 3rem;
@@ -151,6 +151,7 @@
         display: flex;
         justify-content: space-around;
         width: 70%;
+        align-items: flex-start;
         flex-wrap: wrap;
         @include mobile {
             width: 100%;
@@ -161,14 +162,13 @@
         .card-small {
             position: relative;
             margin: 10px 0;
-            padding: 20px 2%;
+            padding: 13px 0%;
             width: 45%;
             height: auto;
             display: flex;
             flex-direction: column;
             border-bottom: 1px solid black;
-            line-height: 25px;
-            justify-content: space-between;
+            line-height: 25px; // justify-content: space-between;
             &:hover {
                 @include shadow-drop-2-center; // @include text-pop-up-top;
             }
@@ -177,6 +177,7 @@
             }
             @include tablet {
                 width: 100%;
+                height: auto;
             }
             .image-container {
                 width: 100%;
@@ -185,12 +186,13 @@
                 z-index: 1;
                 width: 30vh;
                 height: auto;
-                object-fit: cover;
+                object-fit: fill;
                 box-shadow: 2px 5px 5px rgba(68, 68, 68, 0.6);
                 @include tablet {
-                    object-fit: contain;
-                    width: 100%;
-                    height: auto;
+                    width: 90vh;
+                }
+                @include mobile {
+                    width: 37vh;
                 }
             }
             .title {

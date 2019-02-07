@@ -64,7 +64,7 @@
                 <section class="list">
                     <div class="tabs">
                         <div class="topics">
-                            <span class="trending">TRENDING TRIPS:</span>
+                            <span class="trending">Trending Trips</span>
 
                             <div class="dropdown topics">
                                 <div class="dropdown-button">Select type of trip&#9660 </div>
@@ -86,8 +86,9 @@
                             <div class="form">
                                 <div class="tab-content">
                                     <div id="signup">
-                                        <h1>Sign Up for Free</h1>
                                         <form action="/" method="post">
+                                            <h1>Sign In</h1>
+
                                             <label>
                                                 User name<span class="req"></span>
                                             </label>
@@ -96,12 +97,14 @@
                                                 Password<span class="req"></span>
                                             </label>
                                             <input type="text" required autocomplete="off" />
-                                            <li class="tab"><a href="#login">Log In</a></li>
+                                            <button class="tab">Log In</button>
                                         </form>
                                     </div>
                                 </div><!-- tab-content -->
                             </div> <!-- /form -->
                             <section class="right-cards">
+                                <span class="trending">Top Guides</span>
+
                                 <div class="card-small" data-tab="professional">
                                     <div class="date"><i class="fas fa-camera"></i>Jan 22, 2019</div>
                                     <div class="image-container">
@@ -163,31 +166,12 @@
                                     <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
                                         Read More</button>
                                 </div>
-                                <div class="card-small" data-tab="professional">
-                                    <div class="date"><i class="fas fa-camera"></i>Feb 22, 2018</div>
-                                    <div class="image-container">
-                                        <img src="images/hiking/pexels-photo-372098.jpeg" class="image">
-                                    </div>
-                                    <div class="title">
-                                        <h2>A weekend In Linville Gorge!</h2>
-                                        <div class="author">
-                                            <i class="fas fa-user-circle"></i>
-                                            <h3>By Trey Mcknabb</h3>
-                                        </div>
-                                    </div>
-                                    <p>We set up early for the Linville Gorge wilderness. This is a remote region with
-                                        very
-                                        little access in or out. I was excited to see one of the deepest and oldest
-                                        gorges
-                                        in
-                                        the Country!</p>
-                                    <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
-                                        Read More</button>
-                                </div>
 
                         </div>
                         <!-- CARD COMPONENTS -->
+
                         <div class="small-cards">
+
                             <div class="card-small" data-tab="personal">
                                 <div class="date"><i class="fas fa-camera"></i>May 1, 2018</div>
                                 <div class="image-container">
@@ -285,64 +269,6 @@
                                 <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
                                     Read More</button>
                             </div>
-
-                            <div class="card-small" data-tab="professional">
-                                <div class="date"><i class="fas fa-camera"></i>Jan 22, 2019</div>
-                                <div class="image-container">
-                                    <img src="images/hiking/nature-person-red-woman.jpg" class="image">
-                                </div>
-                                <div class="title">
-                                    <h2>Arches!</h2>
-                                    <div class="author">
-                                        <i class="fas fa-user-circle"></i>
-                                        <h3>By John Malcomb</h3>
-                                    </div>
-                                </div>
-                                <p>Arches National Park lives up to its reputation. It is one of the most pristine
-                                    places I
-                                    have ever visited. The stars at night are incredible and it was almost void of
-                                    other
-                                    people. </p>
-                                <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
-                                    Read More</button>
-                            </div>
-                            <div class="card-small" data-tab="personal">
-                                <div class="date"><i class="fas fa-camera"></i>Apr 13, 2015</div>
-                                <div class="image-container">
-                                    <img src="images/hiking/pexels-photo-1076081.jpeg" class="image">
-                                </div>
-                                <div class="title">
-                                    <h2>Group Trip!</h2>
-                                    <div class="author">
-                                        <i class="fas fa-user-circle"></i>
-                                        <h3>By Sam Waldorf</h3>
-                                    </div>
-                                </div>
-                                <p>This was a great trip for the group I took into the woods. Many of them had never
-                                    been
-                                    on an overnight backpacking trip. They bonded over their bruises and sore backs,
-                                    but
-                                    when we reached the first big summit their faces in awe showed it was all worth it.</p>
-                                <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
-                                    Read More</button>
-                            </div>
-                            <div class="card-small" data-tab="professional">
-                                <div class="date"><i class="fas fa-camera"></i>Nov 24, 2016</div>
-                                <div class="image-container">
-                                    <img src="images/hiking/pexels-photo-236973.jpeg" class="image">
-                                </div>
-                                <div class="title">
-                                    <h2>Three is a crowd!</h2>
-                                    <div class="author">
-                                        <i class="fas fa-user-circle"></i>
-                                        <h3>By Shannon Larange</h3>
-                                    </div>
-                                </div>
-                                <p>Just a friend and I decided to take a long weekend and hike part of the Appalachian
-                                    train through Blood Mountain. It was a trip of unforgettable memories. </p>
-                                <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
-                                    Read More</button>
-                            </div>
                             <div class="card-small" data-tab="professional">
                                 <div class="date"><i class="fas fa-camera"></i>Feb 22, 2018</div>
                                 <div class="image-container">
@@ -355,14 +281,15 @@
                                         <h3>By Trey Mcknabb</h3>
                                     </div>
                                 </div>
-                                <p>We set up early for the Linville Gorge wilderness. This is a remote region with very
-                                    little access in or out. I was excited to see one of the deepest and oldest gorges
+                                <p>We set up early for the Linville Gorge wilderness. This is a remote region with
+                                    very
+                                    little access in or out. I was excited to see one of the deepest and oldest
+                                    gorges
                                     in
                                     the Country!</p>
                                 <button onclick="location.href='https://guidr-react-dan.netlify.com/login'" type="button">
                                     Read More</button>
                             </div>
-
 
                     </section>
                 </section>

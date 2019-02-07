@@ -122,7 +122,13 @@
     }
     form {
         text-align: center;
+        background-color: $orange;
+        border: $orange 2px solid;
         margin: 20px 0;
+        .tab {
+            @include custom-btn(white, $violet);
+            margin: 20px 0 45px 6%;
+        }
     }
     .right-cards {
         display: flex;

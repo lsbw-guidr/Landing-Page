@@ -82,6 +82,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        flex-direction: row-reverse;
         @include tablet {
             width: 100%;
         }
@@ -149,13 +150,19 @@
     .small-cards {
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 70%;
         flex-wrap: wrap;
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
         .card-small {
             position: relative;
             margin: 10px 0;
-            padding: 20px 1.5rem;
-            width: 30%;
+            padding: 20px 2%;
+            width: 45%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -170,12 +177,13 @@
             }
             @include tablet {
                 width: 100%;
-            } // .image-container {
-            //     z-index: 1;
-            // }
+            }
+            .image-container {
+                width: 100%;
+            }
             .image {
                 z-index: 1;
-                width: 25vh;
+                width: 30vh;
                 height: auto;
                 object-fit: cover;
                 box-shadow: 2px 5px 5px rgba(68, 68, 68, 0.6);

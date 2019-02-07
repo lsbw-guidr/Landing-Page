@@ -36,6 +36,9 @@
         align-items: center;
         @include list-btn($orange);
         margin: 0 2rem; // margin: 0
+        &:hover {
+            @include heartbeat;
+        }
     }
     .active-tab {
         @include list-btn($violet);
@@ -124,6 +127,9 @@
             border-bottom: 1px solid black;
             line-height: 25px;
             justify-content: space-between;
+            &:hover {
+                @include shadow-drop-2-center; // @include text-pop-up-top;
+            }
             @include mobile {
                 width: 100%;
             }
@@ -137,6 +143,7 @@
                 width: 25vh;
                 height: auto;
                 object-fit: cover;
+                box-shadow: 2px 5px 5px rgba(68, 68, 68, 0.6);
                 @include tablet {
                     object-fit: contain;
                     width: 100%;

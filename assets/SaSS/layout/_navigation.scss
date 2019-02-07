@@ -37,6 +37,10 @@ header {
             .logo-img {
                 width: auto;
                 height: 6rem;
+                @include text-focus-in;
+                &:hover {
+                    @include wobble-hor-bottom;
+                }
             }
         }
         i {
@@ -112,6 +116,7 @@ header {
                 }
                 &:hover {
                     text-decoration: underline;
+                    @include shadow-inset-center;
                     @include mobile {
                         background-color: $orange;
                     }

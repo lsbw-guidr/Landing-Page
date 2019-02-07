@@ -4,9 +4,9 @@
         object-fit: fill;
         width: 100%;
         display: flex;
-        justify-content: center; // border: 3px solid black;
+        justify-content: center; // @include keyburns-top; // border: 3px solid black;
         img {
-            width: 100%;
+            width: 100%; // @include text-focus-in;
         }
         .mobile-head {
             display: none;
@@ -34,7 +34,6 @@
         }
     }
 }
-
 .advertising {
     @include flex(space-between, row);
     background-color: $grey;
@@ -49,7 +48,6 @@
         flex-direction: column;
     }
 }
-
 .split-column {
     h2 {
         text-align: center;
